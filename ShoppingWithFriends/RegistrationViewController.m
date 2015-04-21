@@ -27,6 +27,11 @@
     user.password = _password.text;
     user.email = _email.text;
     user[@"Name"] = _name.text;
+    user[@"Rating"] = @0;
+    user[@"NumPostings"] = @0;
+    user[@"Friends"] = [[NSMutableArray alloc]init];
+    user[@"WishList"] = [[NSMutableArray alloc]init];
+    
     
     [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {

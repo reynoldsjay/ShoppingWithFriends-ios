@@ -29,6 +29,8 @@
 		814F57D11AE58FF0004D7E87 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 814F57C61AE58FF0004D7E87 /* SystemConfiguration.framework */; };
 		814F57D41AE5ED8E004D7E87 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57D31AE5ED8E004D7E87 /* HomeViewController.m */; };
 		814F57D71AE5FA88004D7E87 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57D61AE5FA88004D7E87 /* RegistrationViewController.m */; };
+		814F57DB1AE6A2CA004D7E87 /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57DA1AE6A2CA004D7E87 /* FriendsVC.m */; };
+		814F57DF1AE6B552004D7E87 /* AddFriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57DE1AE6B552004D7E87 /* AddFriendsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,10 @@
 		814F57D31AE5ED8E004D7E87 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		814F57D51AE5FA88004D7E87 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
 		814F57D61AE5FA88004D7E87 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		814F57D91AE6A2CA004D7E87 /* FriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsVC.h; sourceTree = "<group>"; };
+		814F57DA1AE6A2CA004D7E87 /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
+		814F57DD1AE6B552004D7E87 /* AddFriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsVC.h; sourceTree = "<group>"; };
+		814F57DE1AE6B552004D7E87 /* AddFriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,11 +137,12 @@
 				814F57961AE58E32004D7E87 /* AppDelegate.m */,
 				814F57911AE58E32004D7E87 /* Supporting Files */,
 				814F57D81AE602AF004D7E87 /* Registration/Login */,
+				814F57DC1AE6B2A7004D7E87 /* Implemented */,
 				814F579E1AE58E32004D7E87 /* Images.xcassets */,
 				814F57A01AE58E32004D7E87 /* LaunchScreen.xib */,
 				814F579B1AE58E32004D7E87 /* Main.storyboard */,
-				814F57D21AE5ED8E004D7E87 /* HomeViewController.h */,
-				814F57D31AE5ED8E004D7E87 /* HomeViewController.m */,
+				814F57DD1AE6B552004D7E87 /* AddFriendsVC.h */,
+				814F57DE1AE6B552004D7E87 /* AddFriendsVC.m */,
 			);
 			path = ShoppingWithFriends;
 			sourceTree = "<group>";
@@ -195,6 +202,17 @@
 				814F57D61AE5FA88004D7E87 /* RegistrationViewController.m */,
 			);
 			name = Registration/Login;
+			sourceTree = "<group>";
+		};
+		814F57DC1AE6B2A7004D7E87 /* Implemented */ = {
+			isa = PBXGroup;
+			children = (
+				814F57D21AE5ED8E004D7E87 /* HomeViewController.h */,
+				814F57D31AE5ED8E004D7E87 /* HomeViewController.m */,
+				814F57D91AE6A2CA004D7E87 /* FriendsVC.h */,
+				814F57DA1AE6A2CA004D7E87 /* FriendsVC.m */,
+			);
+			name = Implemented;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,11 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814F57DB1AE6A2CA004D7E87 /* FriendsVC.m in Sources */,
 				814F579A1AE58E32004D7E87 /* LoginViewController.m in Sources */,
 				814F57971AE58E32004D7E87 /* AppDelegate.m in Sources */,
 				814F57D71AE5FA88004D7E87 /* RegistrationViewController.m in Sources */,
 				814F57941AE58E32004D7E87 /* main.m in Sources */,
 				814F57D41AE5ED8E004D7E87 /* HomeViewController.m in Sources */,
+				814F57DF1AE6B552004D7E87 /* AddFriendsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
