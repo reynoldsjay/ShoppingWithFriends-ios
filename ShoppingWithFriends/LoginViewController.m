@@ -32,7 +32,12 @@
             [self performSegueWithIdentifier:@"Login" sender:self];
             
         } else {
-            // The login failed. Check error to see why.
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:[error userInfo][@"error"]
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
         }
     }];
 }

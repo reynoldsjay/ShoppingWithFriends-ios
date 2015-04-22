@@ -39,6 +39,12 @@
         } else {
             // NSString *errorString = [error userInfo][@"error"];
             // Show the errorString somewhere and let the user try again.
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                            message:[error userInfo][@"error"]
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
         }
     }];
 }

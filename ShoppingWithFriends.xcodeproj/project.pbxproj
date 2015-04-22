@@ -31,7 +31,9 @@
 		814F57D71AE5FA88004D7E87 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57D61AE5FA88004D7E87 /* RegistrationViewController.m */; };
 		814F57DB1AE6A2CA004D7E87 /* FriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57DA1AE6A2CA004D7E87 /* FriendsVC.m */; };
 		814F57DF1AE6B552004D7E87 /* AddFriendsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57DE1AE6B552004D7E87 /* AddFriendsVC.m */; };
-		814F57E21AE71D9F004D7E87 /* SalePostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57E11AE71D9F004D7E87 /* SalePostVC.m */; };
+		814F57E51AE72EF0004D7E87 /* WishlistVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57E41AE72EF0004D7E87 /* WishlistVC.m */; };
+		814F57E81AE72F34004D7E87 /* SalePostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57E61AE72F34004D7E87 /* SalePostVC.m */; };
+		814F57EB1AE74D6F004D7E87 /* AddToWL.m in Sources */ = {isa = PBXBuildFile; fileRef = 814F57EA1AE74D6F004D7E87 /* AddToWL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +81,12 @@
 		814F57DA1AE6A2CA004D7E87 /* FriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsVC.m; sourceTree = "<group>"; };
 		814F57DD1AE6B552004D7E87 /* AddFriendsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsVC.h; sourceTree = "<group>"; };
 		814F57DE1AE6B552004D7E87 /* AddFriendsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsVC.m; sourceTree = "<group>"; };
-		814F57E01AE71D9F004D7E87 /* SalePostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalePostVC.h; path = ../SalePostVC.h; sourceTree = "<group>"; };
-		814F57E11AE71D9F004D7E87 /* SalePostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalePostVC.m; path = ../SalePostVC.m; sourceTree = "<group>"; };
+		814F57E31AE72EF0004D7E87 /* WishlistVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WishlistVC.h; sourceTree = "<group>"; };
+		814F57E41AE72EF0004D7E87 /* WishlistVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WishlistVC.m; sourceTree = "<group>"; };
+		814F57E61AE72F34004D7E87 /* SalePostVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalePostVC.m; sourceTree = "<group>"; };
+		814F57E71AE72F34004D7E87 /* SalePostVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalePostVC.h; sourceTree = "<group>"; };
+		814F57E91AE74D6F004D7E87 /* AddToWL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToWL.h; sourceTree = "<group>"; };
+		814F57EA1AE74D6F004D7E87 /* AddToWL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToWL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +150,6 @@
 				814F579E1AE58E32004D7E87 /* Images.xcassets */,
 				814F57A01AE58E32004D7E87 /* LaunchScreen.xib */,
 				814F579B1AE58E32004D7E87 /* Main.storyboard */,
-				814F57E01AE71D9F004D7E87 /* SalePostVC.h */,
-				814F57E11AE71D9F004D7E87 /* SalePostVC.m */,
 			);
 			path = ShoppingWithFriends;
 			sourceTree = "<group>";
@@ -210,12 +214,18 @@
 		814F57DC1AE6B2A7004D7E87 /* Implemented */ = {
 			isa = PBXGroup;
 			children = (
+				814F57E71AE72F34004D7E87 /* SalePostVC.h */,
+				814F57E61AE72F34004D7E87 /* SalePostVC.m */,
 				814F57D21AE5ED8E004D7E87 /* HomeViewController.h */,
 				814F57D31AE5ED8E004D7E87 /* HomeViewController.m */,
 				814F57D91AE6A2CA004D7E87 /* FriendsVC.h */,
 				814F57DA1AE6A2CA004D7E87 /* FriendsVC.m */,
 				814F57DD1AE6B552004D7E87 /* AddFriendsVC.h */,
 				814F57DE1AE6B552004D7E87 /* AddFriendsVC.m */,
+				814F57E91AE74D6F004D7E87 /* AddToWL.h */,
+				814F57EA1AE74D6F004D7E87 /* AddToWL.m */,
+				814F57E31AE72EF0004D7E87 /* WishlistVC.h */,
+				814F57E41AE72EF0004D7E87 /* WishlistVC.m */,
 			);
 			name = Implemented;
 			sourceTree = "<group>";
@@ -322,11 +332,13 @@
 			files = (
 				814F57DB1AE6A2CA004D7E87 /* FriendsVC.m in Sources */,
 				814F579A1AE58E32004D7E87 /* LoginViewController.m in Sources */,
+				814F57E51AE72EF0004D7E87 /* WishlistVC.m in Sources */,
+				814F57EB1AE74D6F004D7E87 /* AddToWL.m in Sources */,
 				814F57971AE58E32004D7E87 /* AppDelegate.m in Sources */,
-				814F57E21AE71D9F004D7E87 /* SalePostVC.m in Sources */,
 				814F57D71AE5FA88004D7E87 /* RegistrationViewController.m in Sources */,
 				814F57941AE58E32004D7E87 /* main.m in Sources */,
 				814F57D41AE5ED8E004D7E87 /* HomeViewController.m in Sources */,
+				814F57E81AE72F34004D7E87 /* SalePostVC.m in Sources */,
 				814F57DF1AE6B552004D7E87 /* AddFriendsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
