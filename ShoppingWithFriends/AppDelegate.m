@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface AppDelegate ()
 
@@ -20,6 +21,9 @@
     // Override point for customization after application launch.
     [Parse setApplicationId:@"nm6pIvVQ1qGqOoDWDRgcsxvasrt6LPZF7WKmQ8HM"
                   clientKey:@"qfjcEM85Wpmw6ozG2Fzrmf0vE5Dyc9XOx1x6MnDd"];
+    
+    [GMSServices provideAPIKey:@"AIzaSyANMdtrZ4-0ICAxNgLRit2LdwefXbEriEM"];
+    
     
     return YES;
 }

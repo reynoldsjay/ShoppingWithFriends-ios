@@ -247,13 +247,33 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bas-Lf-TxN">
-                                <rect key="frame" x="138" y="244" width="54" height="30"/>
+                                <rect key="frame" x="138" y="239" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Wishlist">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="jtK-C9-eEs" kind="modal" animates="NO" id="2kJ-W4-9of"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hdh-1t-1yW">
+                                <rect key="frame" x="99" y="283" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View Notifications">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TLo-ll-vB5" kind="modal" animates="NO" id="y5J-d5-DhS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vvy-A8-5lA">
+                                <rect key="frame" x="126" y="327" width="68" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Map View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MXt-zI-eaG" kind="modal" animates="NO" id="X6k-Pl-QPj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -266,7 +286,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ej-mT-Uh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="532" y="295"/>
+            <point key="canvasLocation" x="532" y="271"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="mAT-tY-zUo">
+            <objects>
+                <viewController id="MXt-zI-eaG" customClass="MapVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CxZ-if-S2T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="2jd-6T-JyL" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="58" width="320" height="510"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locations of Sales" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Edq-p4-U20">
+                                <rect key="frame" x="111" y="29" width="142" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fij-AE-Xir">
+                                <rect key="frame" x="29" y="25" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wKG-jL-9Ck" kind="modal" animates="NO" id="r6l-rM-m8i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="2jd-6T-JyL" id="nsZ-m0-PJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xvj-wB-HEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898" y="1047"/>
+        </scene>
+        <!--NotificationsVC-->
+        <scene sceneID="KYd-sX-Wrh">
+            <objects>
+                <viewController id="TLo-ll-vB5" customClass="NotificationsVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXU-RW-1jf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matches your Wishlist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pcv-QE-QqF">
+                                <rect key="frame" x="96" y="38" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oa4-bO-bld">
+                                <rect key="frame" x="28" y="34" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wKG-jL-9Ck" kind="modal" animates="NO" id="Bex-pd-3mc"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="W0m-Zu-F4F">
+                                <rect key="frame" x="0.0" y="95" width="320" height="473"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="TLo-ll-vB5" id="J97-5A-OTh"/>
+                                    <outlet property="delegate" destination="TLo-ll-vB5" id="WAr-3Q-cft"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="W0m-Zu-F4F" id="5ad-q7-grh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltC-fN-Op1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2893" y="1095"/>
         </scene>
         <!--WishlistVC-->
         <scene sceneID="a7F-6h-c8m">
@@ -311,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFj-LE-DVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="1050"/>
+            <point key="canvasLocation" x="2924" y="330"/>
         </scene>
         <!--Add ToWL-->
         <scene sceneID="at4-yn-ojR">
@@ -391,7 +497,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIg-fL-vZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="1248"/>
+            <point key="canvasLocation" x="2633" y="-712"/>
         </scene>
         <!--Sale PostVC-->
         <scene sceneID="hfn-Go-iZ8">
@@ -488,7 +594,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLD-73-JmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="600"/>
+            <point key="canvasLocation" x="2083" y="-744"/>
         </scene>
         <!--Add FriendsVC-->
         <scene sceneID="9UG-yn-sEZ">
@@ -533,7 +639,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZT8-Jt-L9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1846" y="-132"/>
+            <point key="canvasLocation" x="1406" y="-868"/>
         </scene>
         <!--FriendsVC-->
         <scene sceneID="cHm-Fc-JHl">
@@ -575,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQ1-Cj-h2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1482" y="-768"/>
+            <point key="canvasLocation" x="954" y="-856"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -584,8 +690,8 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Lg5-eL-VSV"/>
-        <segue reference="ujy-br-Yde"/>
+        <segue reference="r6l-rM-m8i"/>
+        <segue reference="2kJ-W4-9of"/>
         <segue reference="lH3-HR-uXX"/>
     </inferredMetricsTieBreakers>
 </document>
