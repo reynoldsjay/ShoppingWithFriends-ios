@@ -58,7 +58,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xUk-i1-IMt" kind="modal" id="OPF-8t-5Me"/>
+                                    <segue destination="xUk-i1-IMt" kind="modal" animates="NO" id="OPF-8t-5Me"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bXb-hM-Lks">
@@ -77,7 +77,7 @@
                     <connections>
                         <outlet property="password" destination="gXv-Bi-uMX" id="sga-rx-XEG"/>
                         <outlet property="username" destination="Dy4-Vf-fvS" id="DSo-BQ-Orc"/>
-                        <segue destination="wKG-jL-9Ck" kind="modal" identifier="Login" id="f1x-nd-zsn"/>
+                        <segue destination="wKG-jL-9Ck" kind="modal" identifier="Login" animates="NO" id="f1x-nd-zsn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -159,7 +159,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="UhU-eR-kdv"/>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" animates="NO" id="UhU-eR-kdv"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yUH-YS-9lv">
@@ -184,12 +184,12 @@
                         <outlet property="name" destination="6t7-0O-ViH" id="ip0-HQ-Ojz"/>
                         <outlet property="password" destination="KRN-0Q-KH2" id="thf-Bw-RyQ"/>
                         <outlet property="username" destination="7aN-q3-20R" id="ene-YJ-fVT"/>
-                        <segue destination="wKG-jL-9Ck" kind="modal" identifier="clickedRegister" id="VVI-gO-JaF"/>
+                        <segue destination="wKG-jL-9Ck" kind="modal" identifier="clickedRegister" animates="NO" id="VVI-gO-JaF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUJ-s9-80N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="124"/>
+            <point key="canvasLocation" x="353" y="-592"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="hkv-zj-8ch">
@@ -213,7 +213,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kww-Pq-4En" kind="modal" id="FgZ-nD-36K"/>
+                                    <segue destination="kww-Pq-4En" kind="modal" animates="NO" id="FgZ-nD-36K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zmv-22-M5E">
@@ -223,7 +223,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9p7-MK-IuR" kind="modal" id="KrF-al-I8A"/>
+                                    <segue destination="9p7-MK-IuR" kind="modal" animates="NO" id="KrF-al-I8A"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NSW-XX-5A7">
@@ -236,17 +236,124 @@
                                     <action selector="logout:" destination="wKG-jL-9Ck" eventType="touchUpInside" id="1a8-rN-rYc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qzL-eh-cdx">
+                                <rect key="frame" x="121" y="251" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sale Report">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ynW-OU-5Sc" kind="modal" animates="NO" id="5hh-6X-JAW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qWh-3j-7aI"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="Logout" id="lH3-HR-uXX"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="Logout" animates="NO" id="lH3-HR-uXX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ej-mT-Uh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="831"/>
+            <point key="canvasLocation" x="532" y="295"/>
+        </scene>
+        <!--Sale PostVC-->
+        <scene sceneID="hfn-Go-iZ8">
+            <objects>
+                <viewController id="ynW-OU-5Sc" customClass="SalePostVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OK7-hE-W9j">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="r9b-5H-Rdd">
+                                <rect key="frame" x="137" y="163" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="keyboard:" destination="ynW-OU-5Sc" eventType="editingDidEndOnExit" id="NxQ-Pd-X1Y"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Blr-pa-pSk">
+                                <rect key="frame" x="137" y="214" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="keyboard:" destination="ynW-OU-5Sc" eventType="editingDidEndOnExit" id="5vM-G9-hz6"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Dub-eJ-KhQ">
+                                <rect key="frame" x="137" y="269" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="keyboard:" destination="ynW-OU-5Sc" eventType="editingDidEndOnExit" id="HOa-YS-Bhe"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Report Sale" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9aM-nS-gKX">
+                                <rect key="frame" x="104" y="51" width="91" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iuk-n5-UFC">
+                                <rect key="frame" x="53" y="167" width="34" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9za-pw-cdd">
+                                <rect key="frame" x="50" y="217" width="40" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tfG-Ij-x7w">
+                                <rect key="frame" x="37" y="278" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V92-PP-Urv">
+                                <rect key="frame" x="76" y="469" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wKG-jL-9Ck" kind="modal" animates="NO" id="EX6-qH-sPs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ING-xt-Tk4">
+                                <rect key="frame" x="181" y="469" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPost:" destination="ynW-OU-5Sc" eventType="touchUpInside" id="hg4-kn-jTV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="item" destination="r9b-5H-Rdd" id="auM-sD-xg0"/>
+                        <outlet property="location" destination="Dub-eJ-KhQ" id="EXl-wb-eYV"/>
+                        <outlet property="price" destination="Blr-pa-pSk" id="xqd-t6-HUB"/>
+                        <segue destination="wKG-jL-9Ck" kind="modal" identifier="AddPost" animates="NO" id="MFP-Rt-r8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLD-73-JmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955" y="600"/>
         </scene>
         <!--Add FriendsVC-->
         <scene sceneID="9UG-yn-sEZ">
@@ -272,7 +379,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wKG-jL-9Ck" kind="modal" identifier="back" id="Mhh-XI-qoL"/>
+                                    <segue destination="wKG-jL-9Ck" kind="modal" identifier="back" animates="NO" id="Mhh-XI-qoL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Users" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rgr-T9-UE8">
@@ -291,7 +398,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZT8-Jt-L9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1299" y="998"/>
+            <point key="canvasLocation" x="1846" y="-132"/>
         </scene>
         <!--FriendsVC-->
         <scene sceneID="cHm-Fc-JHl">
@@ -324,7 +431,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="wKG-jL-9Ck" kind="modal" id="sXH-o7-3Qx"/>
+                                    <segue destination="wKG-jL-9Ck" kind="modal" animates="NO" id="sXH-o7-3Qx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -333,7 +440,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQ1-Cj-h2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="180"/>
+            <point key="canvasLocation" x="1482" y="-768"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -342,7 +449,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sXH-o7-3Qx"/>
+        <segue reference="MFP-Rt-r8p"/>
         <segue reference="lH3-HR-uXX"/>
     </inferredMetricsTieBreakers>
 </document>
