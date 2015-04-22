@@ -10,6 +10,11 @@
 #import <Parse/Parse.h>
 
 
+@interface WishlistVC ()
+
+@property IBOutlet UITableView *tableView;
+
+@end
 
 
 @implementation WishlistVC {
@@ -64,6 +69,30 @@
         [alert show];
     }];
     
+    
+}
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
+}
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    PFUser *curUser = [PFUser currentUser];
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //add code here for when you hit delete
+        [wlitems removeObjectAtIndex:indexPath.row];
+        curUser[@"WishList"] = wlitems;
+        [curUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (succeeded) {
+                
+            } else {
+                // There was a problem, check error.description
+            }
+            [self.tableView reloadData];
+        }];
+    }
     
 }
 
